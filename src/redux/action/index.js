@@ -1,0 +1,6 @@
+
+export const GET_RECIPES = "GET_RECIPES"
+
+export const SELECT_RECIPE = "SELECT_RECIPE"
+
+export const SELECT_RECIPE_STEPS = "SELECT_RECIPE_STEPS"
