@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { FlatList, Image, Pressable, StyleSheet } from 'react-native'
+import { FlatList, Image, Pressable, SafeAreaViewBase, StyleSheet } from 'react-native'
 import { useSelector, useDispatch } from 'react-redux';
 import Headers from '../../components/header'
 import InfosTask from '../../components/infosTask';
@@ -10,7 +10,7 @@ import { toggleTask,deleteTask } from './../../redux/action/setRecipesAction';
 
 
 
-export default function TaskScreen() {
+const TaskScreen=()=> {
 
 
     const arrayList = useSelector(getTask)
@@ -76,3 +76,5 @@ const styles = StyleSheet.create({
         borderRadius:50,
     }
 })
+
+export default TaskScreen

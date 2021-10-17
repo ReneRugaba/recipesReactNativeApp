@@ -1,7 +1,7 @@
 import React, {useEffect, useState} from 'react'
 import { Image, Text, View, StyleSheet, ScrollView, ActivityIndicator } from 'react-native'
 import { UseFetchRecipes } from './../api/recipes/useFetchRecipes';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { selectOneRecipe } from '../redux/celector/celectors';
 import { selectOneRecipeStep } from './../redux/celector/celectors';
 
@@ -12,6 +12,7 @@ export default function RecipesDetails({route}) {
     const isVisible = useState(false)
     const recipe = useSelector(selectOneRecipe)
     const steps = useSelector(selectOneRecipeStep)
+    const dispatch = useDispatch()
 
     useEffect(()=>{
        

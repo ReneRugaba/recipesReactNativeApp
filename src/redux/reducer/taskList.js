@@ -2,7 +2,7 @@ import { TOGGLE_TASK, ADD_TASK, DELETE_TASK } from './../action/index';
 
 
 
-const initSate =[{id:1,title:"première tâche",isCompleted:false}]
+const initSate =[]
 
 export const tasksList = (state=initSate,action)=>{
     switch(action.type){

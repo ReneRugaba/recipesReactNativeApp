@@ -5,7 +5,7 @@ import { selectRecipe, setRecipesAction, selectRecipeSteps } from './../../redux
 
 const  BASE_URL_API_RECIPES = "https://api.spoonacular.com/recipes"
 
-const API_KEY = "c813a55e7a3e44eba18a6518de0c06ab"
+const API_KEY = "c0a7f4ce80be48c898e6af7e4ef9996b"
 const MAX_RESULTS=30
 
 export const UseFetchRecipes = () => {
